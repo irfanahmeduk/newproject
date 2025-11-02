@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>
+    Contact Page
+</title>
+</head>
+<body>
+<ul style="list-style-type: none; display:flex; justify-content:center">
+    <li style="margin-right: 20px;">  <a href="index.html">Home</a> </li>
+    <li  style="margin-right: 20px;"> <a href="services.html">Services</a></li>
+    <li  style="margin-right: 20px;"> <a href="contact.html">Contact</a></li>
+</ul>
+<h1 style="text-align:center; margin-top:20px;">Contact Us</h1>
+
+
+<form style="max-width: 400px; margin:auto">
+Name:<br>
+<input name="input_name" style="width: 100%; padding:5px"  type="text" placeholder="Enter Youe name" required >
+<br><br>
+Email:<br>
+<input name="input_email" style="width: 100%; padding:5px"  type="text" placeholder="Enter Youe Email" required >
+<br><br>
+Message<br>
+<textarea name="input_message" style="width: 100%; padding:5px" rows="5"  placeholder="Type your message!" >
+
+</textarea><br><br>
+<input name="button_id" style="padding: 10px 50px;" type="button" onclick="submitBtn()" value="Submit">
+</form>
+
+</body>
+<script>
+function submitBtn()
+{
+     
+   let input_name= document.getElementsByName("input_name")[0].value;
+    let input_email= document.getElementsByName("input_email")[0].value;
+     let input_message= document.getElementsByName("input_message")[0].value;
+    alert("Name:"+input_name);
+    alert("Email:"+input_email);
+    alert("Message:"+input_message);
+}
+
+</script>
+</html>
